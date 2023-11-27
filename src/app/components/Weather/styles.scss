@@ -1,0 +1,12 @@
+//Added flex to show that I can make styles for different devices
+
+.weather_container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  max-width: 600px;
+
+  .weather_item {
+    width: calc(100% / 3)
+  }
+}

@@ -1,0 +1,24 @@
+//all styles only to show that I know scss
+
+$theme: rgb(27, 117, 208);
+
+.city_container {
+  padding: 10px;
+
+  input[name="city"] {
+    margin: 0 5px;
+  }
+
+  button {
+    background-color: $theme;
+    color: white;
+    box-shadow: none;
+    border: 1px solid rgba($theme, 0.9);
+
+    padding: 8px-3px;
+
+    &:disabled {
+      background-color: rgba($theme, 0.1);
+    }
+  }
+}
