@@ -32,7 +32,7 @@ const CityAutoComplete = ({ onChange }) => {
       />
       <datalist id="places">
         {(data || []).map((feat, i) =>
-          <option key={i}>{feat?.properties?.city}</option>
+          <option data-testid={feat?.properties?.city} key={i}>{feat?.properties?.city}</option>
         )}
       </datalist>
       <button onClick={handleSubmitCity} disabled={!city} >Show weather for city</button>

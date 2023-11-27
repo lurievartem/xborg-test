@@ -17,8 +17,8 @@ const WeatherContainer = () => {
     <div>
       <p>Weather</p>
       <CityAutoComplete onChange={handleCityChange} />
-      {isLoading && <p>Loading...</p>}
-      {isError && <div>Cannot retrieve data, please check the city name</div>}
+      {isLoading && <p data-testid="loading">Loading...</p>}
+      {isError && <div data-testid="error">Cannot retrieve data, please check the city name</div>}
       {data && <Weather data={data} />}
     </div>
   );
